@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: {
     // shop: './src/non-optimized/shop.js'
-    shop: './src/non-optimized/shop.js'
+    shop: './src/optimized/shop.js'
     // context: __dirname + '/src', // Adds a context explicitly
   },
   output: {

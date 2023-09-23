@@ -3,16 +3,16 @@ const CleanPlugin = require('clean-webpack-plugin');
 // const CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
-    shop: './src/non-optimized/shop.js'
+    shop: './src/optimized/shop.js'
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist', 'assets', 'scripts'),
     publicPath: 'assets/scripts/'
   },
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'source-map',
 //   devServer: {
 //     contentBase: './dist'
 //   }
