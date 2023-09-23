@@ -1,4 +1,3 @@
-
 import { products } from './products';
 import { renderProducts } from './rendering';
 
