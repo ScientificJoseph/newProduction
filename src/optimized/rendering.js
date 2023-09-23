@@ -30,6 +30,13 @@ export function renderProducts(products, deleteProductFn) {
     const newListEl = createElement(product, product.id, deleteProductFn)
     productListEl.appendChild(newListEl);
   });
+  // const startTime = performance.now()
+  // for (let i=0; i < products.length; i++) {
+  //   const newListEl = createElement(products[i], products[i].id, deleteProductFn)
+  //   productListEl.appendChild(newListEl);
+  // }
+  // const endTime = performance.now()
+  // console.log(endTime - startTime)
 }
 
 export function updateProducts(product, prodId, deleteProductFn, isAdding) {
