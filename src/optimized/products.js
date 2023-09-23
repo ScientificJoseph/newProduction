@@ -1,4 +1,3 @@
-
 export const products = [
     {
       id: new Date('1/1/1970').toString(),
