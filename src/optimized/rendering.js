@@ -8,7 +8,6 @@ function createElement(product, prodId, deleteProductFn) {
   `;
   const prodDeleteButtonEl = document.createElement('button');
 
-
   prodDeleteButtonEl.textContent = 'DELETE';
 
   newListEl.id = prodId;
@@ -18,9 +17,7 @@ function createElement(product, prodId, deleteProductFn) {
     deleteProductFn.bind(null, prodId)
   );
 
-
   newListEl.appendChild(prodDeleteButtonEl);
-
   return newListEl;
 }
 
@@ -42,7 +39,8 @@ export function renderProducts(products, deleteProductFn) {
 export function updateProducts(product, prodId, deleteProductFn, isAdding) {
   if (isAdding) {
     const newProductEl = createElement(product, prodId, deleteProductFn);
-    productListEl.insertAdjacentElement('afterbegin', newProductEl)
+    productListEl.insertAdjacentElement('afterbegin', newProductEl);
+
   } else {
     const productEl = document.getElementById(prodId);
     productEl.remove();
