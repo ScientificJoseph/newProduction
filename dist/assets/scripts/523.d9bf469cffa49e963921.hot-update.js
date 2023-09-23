@@ -1,2 +1,0 @@
-"use strict";self.webpackHotUpdatenewproduction(523,{9092:function(t,n,e){var c=e(6889),d=e(2530);const o=document.getElementById("new-product");(0,d.o)(c.R,(function(t){e.e(841).then(e.bind(e,3841)).then((n=>{n.deleteProduct(t)}))})),o.addEventListener("submit",(function(t){e.e(841).then(e.bind(e,3841)).then((n=>{n.addProduct(t)}))}))}},(function(t){t.h=function(){return"4b39e56bc4ff7c57f328"}}));
-//# sourceMappingURL=523.d9bf469cffa49e963921.hot-update.js.map
